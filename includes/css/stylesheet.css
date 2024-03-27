@@ -3,17 +3,30 @@
     margin: 0;
 }
 
+.circle {
+	position: absolute;
+    border: solid 1px #ccc;
+	width: 60px; 
+	height: 60px; 
+    border-radius: 50%;  
+}
+
 /* HEADER*/
 .divheader{
     display: flex; 
-    flex-direction: row-reverse;
+    flex-direction: column;
 }
 
 .divheadertext{
     display: flex;
     margin-right: 4rem;
-    position: absolute;
+    position: sticky;
     z-index: 1;
+    flex-direction: row-reverse;
+}
+
+.divheadertextspace{
+    display: flex;
 }
 
 .h2Header {
@@ -36,19 +49,18 @@
     cursor: pointer;
 }
 
-/* MAIN */
 .divmainall {
     display: flex;
 }
 
 .divmain {
     display: flex;
+    margin-top: -6rem;
 }
 
 .imgstart {
     width: 100%;
-    height: 100%;
-    position: absolute;
+    height: 61rem;
 }
 
 .h1_start1 {
@@ -56,7 +68,7 @@
     position: absolute;
     font-size: 12rem;
     margin-top: 10rem;
-    margin-left: 10rem;
+    margin-left: 8rem;
     letter-spacing: 3.5rem;
     font-family: "subway-new-york-sc", sans-serif;
     font-weight: 400;
@@ -75,6 +87,61 @@
     font-style: normal;
 }
 
+/* Arrow animation to bottom */
+.arrowbutton {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.arrow-button {
+    display: flex;
+    color: #FFFFFF;
+    background-color: #B72521;
+    padding: 2rem 2rem;
+    border-radius: 10rem;
+    transition: all .3s ease;
+    cursor: pointer;
+    align-items: center;
+    border-style: solid;
+    border-width: 0px; 
+}
+
+.arrow-button > .arrow {
+    width: 19px;
+    height: 19px;
+    border-right: 4px solid #FFFFFF;
+    border-bottom: 4px solid #FFFFFF;
+    position: relative;
+    transform: rotate(45deg);
+    transition: all .3s ease;
+}
+
+.arrow-button > .arrow::before {
+    display: block;
+    width: 14px;
+    transform-origin: bottom right;
+    height: 4px;
+    position: absolute;
+    bottom: calc(-2px / 2);
+    transform: rotate(45deg);
+    transition: all .3s ease;
+}
+
+.arrow-button:hover > .arrow {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.arrow-button:hover {
+    background-color: #B72521;
+    color: #fff;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000000;
+}
+
+
 /* PROJECTINFO */
 .divportfolio {
     display: flex;
@@ -83,7 +150,7 @@
 .projectboxes {
     display: flex;
     background-color: #ffffff;
-    margin-top: 10rem;
+    margin-top: 5rem;
     margin-left: 10rem;
     margin-bottom: 20rem;
 }
@@ -98,7 +165,6 @@
     display: flex;
     position: absolute;
     font-size: 13rem;
-    margin-top: 55rem;
     margin-left: -8rem;
     letter-spacing: 7.4rem;
     font-family: "subway-new-york-sc", sans-serif;
@@ -110,7 +176,7 @@
 .h1_portfoliotext {
     display: flex;
     font-size: 2rem;
-    margin-top: 80rem;
+    margin-top: 20rem;
     margin-left: 4rem;
     font-weight: 400;
     font-style: normal;
@@ -121,24 +187,4 @@
     font-size: 1.5rem;
     font-weight: 400;
     font-style: normal;
-}
-
-/* Glass plate */
-
-.imgglass {
-    box-sizing: border-box;
-    position: absolute;
-    width: 250px;
-    height: 952px;
-    backdrop-filter: blur(5px);
-    z-index: -1;
-    margin-left: 6rem;
-    margin-top: 1rem;
-}
-
-.gifspray {
-    position: absolute;
-    width: 250px;
-    margin-left: 7rem;
-    margin-top: 40rem;
 }
