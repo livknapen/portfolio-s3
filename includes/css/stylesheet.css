@@ -184,13 +184,14 @@
 .DesignL {
     display: flex;
     margin-top: 22rem;
+    justify-content: flex-start;
 }
 
 .DesignR {
     display: flex;
     margin-top: 22rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }
 
 .p_DesignL {
@@ -211,27 +212,6 @@
     flex-direction: column;
 }
 
-.a_pdfL {
-    display: flex;
-    font-style: 300;
-    font-family: 'Sansation', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    text-decoration: none;
-    color: #ee4943;
-    margin-right: 11rem;
-}
-
-.a_pdfR {
-    display: flex;
-    font-style: normal;
-    font-family: 'Sansation', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    text-decoration: none;
-    color: #ee4943;
-}
-
 .imgDOT {
     display: flex;
     width: 42%;
@@ -241,7 +221,17 @@
 
 .imgDOT:nth-child(1) {
     filter: drop-shadow(-16px 16px 4px rgba(0, 0, 0, 0.25));
-  }
+}
+
+.imgPORTFOLIO {
+    display: flex;
+    width: 42%;
+    margin-right: 12.5rem;
+}
+
+.imgPORTFOLIO:nth-child(1) {
+    filter: drop-shadow(16px 16px 4px rgba(0, 0, 0, 0.25));
+}
 
 .imgTEST {
     display: flex;
@@ -250,6 +240,66 @@
     margin-right: 12.5rem;
 }
 
-.imgTEST:nth-child(2) {
+.imgTEST:nth-child(1) {
     filter: drop-shadow(16px 16px 4px rgba(0, 0, 0, 0.25));
-  }
+}
+
+.button_projectL {
+    background-color: #B72521;
+    font-size: 1rem;
+    color: #FFFFFF;
+    font-family: 'Sansation', sans-serif;    
+    font-weight: 700;
+    font-style: normal;
+    border: none; 
+    border-style: solid;
+    border-width: 0px; 
+    border-radius: 10px; 
+    padding: 1rem 6rem 1rem 6rem;
+    margin-bottom: 4rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.button_projectL:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000000;
+}
+
+.button_projectR {
+    background-color: #B72521;
+    font-size: 1rem;
+    color: #FFFFFF;
+    font-family: 'Sansation', sans-serif;    
+    font-weight: 700;
+    font-style: normal;
+    border: none; 
+    border-style: solid;
+    border-width: 0px; 
+    border-radius: 10px; 
+    padding: 1rem 6rem 1rem 6rem;
+    margin-bottom: 4rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.button_projectR:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000000;
+}
+
+/* Footer */
+.pfooter {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Sansation', sans-serif;    
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 1rem;
+}
