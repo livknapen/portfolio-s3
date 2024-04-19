@@ -35,7 +35,7 @@
 }
 
 .h2Header:hover {
-    color: #ffffff;
+    color: #B72521;
     transition: 0.3s;
     transform: translateY(-7px);
     cursor: pointer;
@@ -309,6 +309,61 @@ svg {
     border-color: #000000;
 }
 
+/* Learnnig outcomes */
+.divLOall {
+    display: flex;
+    flex-direction: column;
+}
+
+.divLO {
+    display: flex;
+}
+
+.h1_LOheader {
+    display: flex;
+    font-size: 13rem;
+    letter-spacing: 6.5rem;
+    margin-left: 2rem;
+    margin-top: 4rem;
+    font-family: "subway-new-york-sc", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #3B70BB;
+    z-index: 1;
+}
+
+.text_LOinfo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35rem;
+    margin-right: 9rem;
+    margin-left: 10rem;
+    margin-bottom: 5rem;
+}
+
+.h1_LOs {
+    font-family: 'Sansation', sans-serif;   
+    font-weight: 300; 
+    letter-spacing: 0.3rem;
+    font-size: 3rem;
+    margin-bottom: 7rem;
+    text-decoration: none;
+    color: #000000;
+    transition: 0.3s;
+}
+
+.h1_LOs:hover {
+    color: #B72521;
+    transition: 0.3s;
+    transform: translateY(-7px);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.divLOheader {
+    display: flex;
+}
+
 /* About me */
 .img_aboutme {
     display: flex;
@@ -328,7 +383,7 @@ svg {
     font-size: 13rem;
     letter-spacing: 7rem;
     margin-left: 2rem;
-    margin-top: 13rem;
+    margin-top: 7rem;
     font-family: "subway-new-york-sc", sans-serif;
     font-weight: 400;
     font-style: normal;
