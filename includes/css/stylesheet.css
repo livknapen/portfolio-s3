@@ -79,6 +79,21 @@
     font-style: normal;
 }
 
+svg {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+
+.svg_white {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    margin-top: 5.5rem;
+}
+
 /* Arrow animation to bottom */
 .arrowbutton {
     position: absolute;
@@ -292,6 +307,45 @@
     border-width: 5px;
     border-style: solid;
     border-color: #000000;
+}
+
+/* About me */
+.img_aboutme {
+    display: flex;
+    width: 25%;
+    margin-left: 6rem;
+    margin-right: 12.5rem;
+    margin-top: 19rem;
+}
+
+.img_aboutme:nth-child(1) {
+    filter: drop-shadow(-16px 16px 4px rgba(0, 0, 0, 0.25));
+}
+
+.h1_aboutmeheader {
+    display: flex;
+    position: absolute;
+    font-size: 13rem;
+    letter-spacing: 7rem;
+    margin-left: 2rem;
+    margin-top: 13rem;
+    font-family: "subway-new-york-sc", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #3B70BB;
+    z-index: 1;
+}
+
+.text_aboutme {
+    display: flex;
+    margin-top: 35rem;
+    margin-right: 9rem;
+}
+
+.h1_aboutme {
+    font-family: 'Sansation', sans-serif;   
+    font-weight: 300; 
+    letter-spacing: 0.3rem;
 }
 
 /* Footer */
