@@ -1,4 +1,4 @@
-# Website Template
+# Portfolio Liv Knapen Media S3
 
 This is a flat and responsive website template designed and coded by Liv Knapen. When you load this website, you will see a picture of me and you can navigate through my portfolio website. In the header you can see the Learning Outcomes and a page About me. If you scroll, you can see the projects I worked on and you can read them.
 
