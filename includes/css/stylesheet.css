@@ -1,414 +1,448 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 /* HEADER*/
-.divheader{
-    display: flex; 
-    flex-direction: column;
+.divheader {
+  display: flex;
+  flex-direction: column;
 }
 
-.divheadertext{
-    display: flex;
-    margin-right: 4rem;
-    position: sticky;
-    z-index: 1;
-    flex-direction: row-reverse;
+.divheadertext {
+  display: flex;
+  margin-right: 4rem;
+  position: sticky;
+  z-index: 1;
+  flex-direction: row-reverse;
 }
 
-.divheadertextspace{
-    display: flex;
+.divheadertextspace {
+  display: flex;
 }
 
 .h2Header {
-    font-size: 3rem;
-    color: #171717;
-    font-family: "subway-new-york-sc", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-right: 4rem;
-    margin-top: 2rem;
-    text-decoration: none;
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
+  font-size: 3rem;
+  color: #171717;
+  font-family: "subway-new-york-sc", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-right: 4rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
 }
 
 .h2Header:hover {
-    color: #B72521;
-    transition: 0.3s;
-    transform: translateY(-7px);
-    cursor: pointer;
+  color: #b72521;
+  transition: 0.3s;
+  transform: translateY(-7px);
+  cursor: pointer;
 }
 
 .divmainall {
-    display: flex;
+  display: flex;
 }
 
 .divmain {
-    display: flex;
-    margin-top: -6rem;
+  display: flex;
+  margin-top: -6rem;
 }
 
 .imgstart {
-    width: 100%;
-    height: 61rem;
+  width: 100%;
+  height: 61rem;
 }
 
 .h1_start1 {
-    display: flex;
-    position: absolute;
-    font-size: 12rem;
-    margin-top: 10rem;
-    margin-left: 8rem;
-    letter-spacing: 3.5rem;
-    font-family: "subway-new-york-sc", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  display: flex;
+  position: absolute;
+  font-size: 12rem;
+  margin-top: 10rem;
+  margin-left: 8rem;
+  letter-spacing: 3.5rem;
+  font-family: "subway-new-york-sc", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .h1_start2 {
-    display: flex;
-    position: absolute;
-    font-size: 12rem;
-    margin-top: 22rem;
-    margin-left: 28rem;
-    letter-spacing: 5rem;
-    font-family: "subway-new-york-sc", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  display: flex;
+  position: absolute;
+  font-size: 12rem;
+  margin-top: 22rem;
+  margin-left: 28rem;
+  letter-spacing: 5rem;
+  font-family: "subway-new-york-sc", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 svg {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    z-index: 0;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
 }
 
 .svg_white {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    z-index: 0;
-    margin-top: 5.5rem;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  margin-top: 5.5rem;
 }
 
 /* Arrow animation to bottom */
 .arrowbutton {
-    position: absolute;
-    top: 92%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 92%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .arrow-button {
-    display: flex;
-    color: #FFFFFF;
-    background-color: #B72521;
-    padding: 2rem 2rem;
-    border-radius: 10rem;
-    transition: all .3s ease;
-    cursor: pointer;
-    align-items: center;
-    border-style: solid;
-    border-width: 0px; 
+  display: flex;
+  color: #ffffff;
+  background-color: #b72521;
+  padding: 2rem 2rem;
+  border-radius: 10rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  align-items: center;
+  border-style: solid;
+  border-width: 0px;
 }
 
 .arrow-button > .arrow {
-    width: 19px;
-    height: 19px;
-    border-right: 4px solid #FFFFFF;
-    border-bottom: 4px solid #FFFFFF;
-    position: relative;
-    transform: rotate(45deg);
-    transition: all .3s ease;
+  width: 19px;
+  height: 19px;
+  border-right: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  position: relative;
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
 }
 
 .arrow-button > .arrow::before {
-    display: block;
-    width: 14px;
-    transform-origin: bottom right;
-    height: 4px;
-    position: absolute;
-    bottom: calc(-2px / 2);
-    transform: rotate(45deg);
-    transition: all .3s ease;
+  display: block;
+  width: 14px;
+  transform-origin: bottom right;
+  height: 4px;
+  position: absolute;
+  bottom: calc(-2px / 2);
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
 }
 
 .arrow-button:hover > .arrow {
-    transform: rotate(45deg) translate(7px, 7px);
+  transform: rotate(45deg) translate(7px, 7px);
 }
 
 .arrow-button:hover {
-    background-color: #B72521;
-    color: #fff;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #000000;
+  background-color: #b72521;
+  color: #fff;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000000;
 }
-
 
 /* PROJECTINFO */
 .divportfolio {
-    display: flex;
+  display: flex;
 }
 
 .projectboxes {
-    display: flex;
-    background-color: #ffffff;
-    margin-top: 5rem;
-    margin-left: 10rem;
-    margin-bottom: 20rem;
+  display: flex;
+  background-color: #ffffff;
+  margin-top: 5rem;
+  margin-left: 10rem;
+  margin-bottom: 20rem;
 }
 
 .projectinfo {
-    display: flex;
-    flex-direction: column;
-    margin-right: 15rem;
+  display: flex;
+  flex-direction: column;
+  margin-right: 15rem;
 }
 
 .h1_projectsheader {
-    display: flex;
-    position: absolute;
-    font-size: 13rem;
-    margin-left: -8rem;
-    letter-spacing: 6.6rem;
-    font-family: "subway-new-york-sc", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #3B70BB;
+  display: flex;
+  position: absolute;
+  font-size: 13rem;
+  margin-left: -8rem;
+  letter-spacing: 6.6rem;
+  font-family: "subway-new-york-sc", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3b70bb;
 }
 
 .h1_DesignL {
-    display: flex;
-    font-size: 2rem;
-    font-weight: 400;
-    font-style: normal;
-    font-family: "subway-new-york-sc", sans-serif;    
+  display: flex;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "subway-new-york-sc", sans-serif;
 }
 
 .h1_DesignR {
-    display: flex;
-    font-size: 2rem;
-    font-weight: 400;
-    font-style: normal;
-    font-family: "subway-new-york-sc", sans-serif;    
+  display: flex;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "subway-new-york-sc", sans-serif;
 }
 
 .DesignL {
-    display: flex;
-    margin-top: 22rem;
-    justify-content: flex-start;
+  display: flex;
+  margin-top: 22rem;
+  justify-content: flex-start;
 }
 
 .DesignR {
-    display: flex;
-    margin-top: 22rem;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+  display: flex;
+  margin-top: 22rem;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 
 .p_DesignL {
-    display: flex;
-    font-style: normal;
-    font-family: 'Sansation', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    margin-right: 11rem;
+  display: flex;
+  font-style: normal;
+  font-family: "Sansation", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  margin-right: 11rem;
 }
 
 .p_DesignR {
-    display: flex;
-    font-style: normal;
-    font-family: 'Sansation', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    flex-direction: column;
+  display: flex;
+  font-style: normal;
+  font-family: "Sansation", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  flex-direction: column;
 }
 
 .imgDOT {
-    display: flex;
-    width: 42%;
-    margin-left: 1rem;
-    margin-right: 12.5rem;
+  display: flex;
+  width: 42%;
+  margin-left: 1rem;
+  margin-right: 12.5rem;
 }
 
 .imgDOT:nth-child(1) {
-    filter: drop-shadow(-16px 16px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(-16px 16px 4px rgba(0, 0, 0, 0.25));
 }
 
 .imgPORTFOLIO {
-    display: flex;
-    width: 42%;
-    margin-right: 12.5rem;
+  display: flex;
+  width: 42%;
+  margin-right: 12.5rem;
 }
 
 .imgPORTFOLIO:nth-child(1) {
-    filter: drop-shadow(16px 16px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(16px 16px 4px rgba(0, 0, 0, 0.25));
 }
 
 .imgTEST {
-    display: flex;
-    width: 42%;
-    margin-left: 13rem;
-    margin-right: 12.5rem;
+  display: flex;
+  width: 42%;
+  margin-left: 13rem;
+  margin-right: 12.5rem;
 }
 
 .imgTEST:nth-child(1) {
-    filter: drop-shadow(16px 16px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(16px 16px 4px rgba(0, 0, 0, 0.25));
 }
 
 .button_projectL {
-    background-color: #B72521;
-    font-size: 1rem;
-    color: #FFFFFF;
-    font-family: 'Sansation', sans-serif;    
-    font-weight: 700;
-    font-style: normal;
-    border: none; 
-    border-style: solid;
-    border-width: 0px; 
-    border-radius: 10px; 
-    padding: 1rem 6rem 1rem 6rem;
-    margin-bottom: 4rem;
-    transition: 0.3s;
-    cursor: pointer;
+  background-color: #b72521;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Sansation", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  border: none;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 10px;
+  padding: 1rem 6rem 1rem 6rem;
+  margin-bottom: 4rem;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .button_projectL:hover {
-    transition: 0.3s;
-    cursor: pointer;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #000000;
+  transition: 0.3s;
+  cursor: pointer;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000000;
 }
 
 .button_projectR {
-    background-color: #B72521;
-    font-size: 1rem;
-    color: #FFFFFF;
-    font-family: 'Sansation', sans-serif;    
-    font-weight: 700;
-    font-style: normal;
-    border: none; 
-    border-style: solid;
-    border-width: 0px; 
-    border-radius: 10px; 
-    padding: 1rem 6rem 1rem 6rem;
-    margin-bottom: 4rem;
-    transition: 0.3s;
-    cursor: pointer;
+  background-color: #b72521;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Sansation", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  border: none;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 10px;
+  padding: 1rem 6rem 1rem 6rem;
+  margin-bottom: 4rem;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .button_projectR:hover {
-    transition: 0.3s;
-    cursor: pointer;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #000000;
+  transition: 0.3s;
+  cursor: pointer;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000000;
 }
 
 /* Learnnig outcomes */
 .divLOall {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .divLO {
-    display: flex;
+  display: flex;
 }
 
 .h1_LOheader {
-    display: flex;
-    font-size: 13rem;
-    letter-spacing: 6.5rem;
-    margin-left: 2rem;
-    margin-top: 4rem;
-    font-family: "subway-new-york-sc", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #3B70BB;
-    z-index: 1;
+  display: flex;
+  font-size: 13rem;
+  letter-spacing: 6.5rem;
+  margin-left: 2rem;
+  margin-top: 4rem;
+  font-family: "subway-new-york-sc", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3b70bb;
+  z-index: 1;
 }
 
 .text_LOinfo {
-    display: flex;
-    flex-direction: column;
-    margin-top: 35rem;
-    margin-right: 9rem;
-    margin-left: 10rem;
-    margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 7rem;
+  margin-right: 9rem;
+  margin-left: 10rem;
+  margin-bottom: 5rem;
 }
 
 .h1_LOs {
-    font-family: 'Sansation', sans-serif;   
-    font-weight: 300; 
-    letter-spacing: 0.3rem;
-    font-size: 3rem;
-    margin-bottom: 7rem;
-    text-decoration: none;
-    color: #000000;
-    transition: 0.3s;
+  font-family: "Sansation", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+  font-size: 3rem;
+  margin-bottom: 7rem;
+  text-decoration: none;
+  color: #000000;
+  transition: 0.3s;
 }
 
 .h1_LOs:hover {
-    color: #B72521;
-    transition: 0.3s;
-    transform: translateY(-7px);
-    cursor: pointer;
-    text-decoration: underline;
+  color: #b72521;
+  transition: 0.3s;
+  transform: translateY(-7px);
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .divLOheader {
-    display: flex;
+  display: flex;
 }
 
 /* About me */
 .img_aboutme {
-    display: flex;
-    width: 25%;
-    margin-left: 6rem;
-    margin-right: 12.5rem;
-    margin-top: 19rem;
+  display: flex;
+  width: 25%;
+  margin-left: 6rem;
+  margin-right: 12.5rem;
+  margin-top: 19rem;
 }
 
 .img_aboutme:nth-child(1) {
-    filter: drop-shadow(-16px 16px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(-16px 16px 4px rgba(0, 0, 0, 0.25));
 }
 
 .h1_aboutmeheader {
+  display: flex;
+  position: absolute;
+  font-size: 13rem;
+  letter-spacing: 7rem;
+  margin-left: 2rem;
+  margin-top: 7rem;
+  font-family: "subway-new-york-sc", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3b70bb;
+  z-index: 1;
+}
+
+.text_aboutme {
+  display: flex;
+  margin-top: 35rem;
+  margin-right: 9rem;
+}
+
+.h1_aboutme {
+  font-family: "Sansation", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+}
+
+/* Projects */
+.img_projects {
+    display: flex;
+    width: 38%;
+    margin-left: 11rem;
+    margin-right: 12.5rem;
+    margin-top: 27.4rem;
+  }
+  
+  .img_projects:nth-child(1) {
+    filter: drop-shadow(-16px 16px 4px rgba(0, 0, 0, 0.25));
+  } 
+
+  .h1_projectsheader2 {
     display: flex;
     position: absolute;
     font-size: 13rem;
-    letter-spacing: 7rem;
+    letter-spacing: 3.7rem;
     margin-left: 2rem;
     margin-top: 7rem;
     font-family: "subway-new-york-sc", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #3B70BB;
+    color: #3b70bb;
     z-index: 1;
-}
+  }
 
-.text_aboutme {
+  .text_projects {
     display: flex;
-    margin-top: 35rem;
+    flex-direction: column;
+    margin-top: 25rem;
     margin-right: 9rem;
-}
-
-.h1_aboutme {
-    font-family: 'Sansation', sans-serif;   
-    font-weight: 300; 
-    letter-spacing: 0.3rem;
-}
+  }
 
 /* Footer */
 .pfooter {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-family: 'Sansation', sans-serif;    
-    font-size: 20px;
-    font-weight: 300;
-    margin-top: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Sansation", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 1rem;
 }
