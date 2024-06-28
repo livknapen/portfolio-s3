@@ -50,6 +50,9 @@ First open the code on your local PC. After that open the console and install th
 - Install dependencies: `npm i`.
 - Run the live server.
 
+## Git WIKI
+https://git.fhict.nl/I505851/portfolio-s3/-/wikis/home
+
 ## License
 
 Copyright © 2024 Liv Knapen. All rights reserved.

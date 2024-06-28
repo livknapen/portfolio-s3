@@ -437,6 +437,20 @@ svg {
     z-index: 1;
   }
 
+  .h1_projectsheader3 {
+    display: flex;
+    position: absolute;
+    font-size: 7rem;
+    letter-spacing: 3.7rem;
+    margin-left: 2rem;
+    margin-top: 7rem;
+    font-family: "subway-new-york-sc", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #3b70bb;
+    z-index: 1;
+  }
+
   .text_projects {
     display: flex;
     flex-direction: column;
